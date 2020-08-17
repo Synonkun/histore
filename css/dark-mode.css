@@ -1,0 +1,27 @@
+
+[data-theme="dark"] {
+  background-color: #0F1215 !important;
+  color: #eee;
+  transition: 1s all;
+}
+
+[data-theme="dark"] .text-ireng{
+  color: white ;
+}
+
+[data-theme="dark"] .text-putih{
+  color: #0e0a11;
+}
+
+[data-theme="dark"] .bg-ireng {
+  background: #282835;
+}
+
+
+[data-theme="dark"] .arrival-product:hover{
+	background-color: transparent;
+	}
+
+[data-theme="dark"] .bg-black {
+	
+	}

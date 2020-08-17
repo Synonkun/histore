@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@media (max-width: 770px){
+
+	:root {
+		transition: 1s all;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		transition: 1s all !important;
+	}
+	::selection {
+		color: #ffebef;
+		background-color: #f51444;
+	}
+	/* Bootstrap */
+	.mt-5 {
+  		margin-top: 2rem;
+	}
+	.mb-5 {
+  		margin-bottom: 2rem;
+	}
+
+	.text-ireng {
+		color: #0F1215;
+	}
+	.text-putih {
+		color: white;
+	}
+	.bg-ireng {
+		background: #0e0a11;
+	}
+	.header {
+		font-size: 40px;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-family: 'sayhy';
+		letter-spacing: 5px;
+		text-align: center;
+		position: relative;
+		margin: 40px 0;
+		padding-bottom: 20px;
+	}
+	.header:before {
+		content: '';
+		position: absolute;
+		display: block;
+		background: #fb2a47;
+		width: 70px;
+		height: 3px;
+		left: calc(50% - 25px);
+		bottom: 0;
+	}
+
+	.jumbotronhi {
+		width: 100%;
+		height: 100vh;
+		background-image: url(../img/rohit-tandon-vnqm4MEPAIA-unsplash.jpg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		text-align: center;
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+		cursor: none;
+		position: relative;
+  		z-index: 1;
+	}
+
+	.jumbotronhi:after{
+	  content: '';
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	  bottom: 0;
+	  background:rgba(0,0,0,.5);
+	  z-index: -1;
+	}
+	.jumbotronhi h1 {
+		font-size: 50px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: white;
+		font-family: "Roboto", sans-serif;
+		z-index: -1;
+		margin-top: 150px;
+	}
+	.jumbotronhi h2 {
+		font-size: 40px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: white;
+		font-family: "Roboto", sans-serif;
+		z-index: -1;
+		margin: 20px 0;
+	}
+	@keyframes missing {
+		from{
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
+	.jumbotronhi .missing {
+		animation: missing 1s alternate infinite;
+	}
+	.jumbotronhi p {
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: white;
+		font-family: "Roboto", sans-serif;
+		z-index: -1;
+	}
+	.jumbotronhi .darkmode .label {
+		position: relative;
+		width: 80px;
+		height: 28px;
+		margin-bottom: 150px; /* saat medium agar tidak numpuk*/
+	}
+	.jumbotronhi .darkmode input {
+		transform: scale(0);
+	}
+	.jumbotronhi .darkmode input:checked + .background {
+		background: #282835;
+	}
+	.jumbotronhi .darkmode input:checked + .background .knob {
+		transform: translateX(53px);
+		background-image: url(../svg/night.svg);
+		background-repeat: no-repeat;
+		background-size: 80% 80%;
+		background-position: center;
+	}
+	.jumbotronhi .darkmode .background {
+		position: absolute;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		border-radius: 20px;
+		background: #c6c8d6;
+		transition: background .4s;
+		border:2px solid white;
+	}
+	.jumbotronhi .darkmode .knob {
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background: #f7f7f7;
+		background-image: url(../svg/brightness.svg);
+		background-repeat: no-repeat;
+		background-size: 80% 80%;
+		background-position: center;
+		transition: transform .4s;
+	}
+	.jumbotronhi .social-media ul{
+		display: block;
+	    position: absolute;
+	    width: 100%;
+	    left: 0;
+	    bottom: 0;
+	    margin: 0;
+	    padding: 0;
+	}
+	.jumbotronhi .social-media li {
+		display: inline-block;
+		margin: 10px;
+		padding: 10px;
+	}
+	.jumbotronhi .social-media a {
+		font-size: 20px;
+		text-decoration: none !important;
+		color: white;
+	}
+	.sayhy {
+		width:100%;
+		height: auto !important;
+		margin: 30px 0px 100px 0px;
+		background-image: url('img/dominik-martin-b2-fBVrfx0o-unsplash.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	@font-face {
+		font-family: 'sayhy';
+		src:url(../font/LondrinaSolid-Regular.otf);
+	}
+	.sayhy h1 {
+		font-size: 50px;
+		text-transform: capitalize;
+		margin-top: 50px;
+		font-weight: bold;
+		font-family: 'sayhy';
+		letter-spacing: 5px;
+	}
+	.sayhy h2 {
+		font-size: 50px;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+	.sayhy .btn-sayhy {
+		font-size: 18px;
+		font-weight: 800;
+		text-transform: capitalize;
+		padding: 10px 25px;
+		margin: 20px 5px;
+		border-radius: 10px;
+		transition: 1s all;
+		background: #fb2a47;
+	}
+	.sayhy .btn-sayhy:hover {
+		font-size: 18px;
+		text-transform: capitalize;
+		padding: 10px 25px;
+		border-radius: 10px;
+		box-shadow: 5px 14px 14px -9px black;
+	}
+	.sayhy .market-desc {
+		font-size: 15px;
+		text-indent: 30px;
+		color: #333;
+	}
+	.sayhy .market-desc .uppercase {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.sayhy img {
+		text-align: center;
+		width: 100%;
+		height: 70%;
+		-moz-user-select: none;
+    	/* -webkit-user-select: none; */
+    	-ms-user-select: none;
+    	user-select: none;
+    	-webkit-user-drag: none;
+    	user-drag: none;
+    	margin: 30px 0;
+	}
+	.sayhy .online-store {
+		text-align: center;
+	}
+	.sayhy .online-store p {
+		color: #fff;
+		font-size: 17px;
+		text-transform: capitalize;
+		font-weight: 500;
+		display: inline-block;
+		padding: 10px 0;
+		margin: 10px 5px;
+		width: 45%;
+		border-radius: 5px;
+		transition: 1s all;
+		cursor: pointer;
+	}
+	.sayhy .online-store p:hover {
+		color: #fb2a47;
+	}
+	.sayhy .online-store i {
+		padding: 10px;
+		color: #fb2a47;
+	}
+
+
+	.features {
+		width: 100%;
+		height: 100%;
+	}
+	.features .features-box {
+		width: 100%;
+		height: 100%;
+		padding: 20px;
+		text-align: center; /*untuk button*/
+		border-radius: 5px;
+		overflow: hidden;
+	}
+	.features .features-box:hover {
+		box-shadow: 1px 1px 20px black;
+	}
+	.features .features-box img {
+		width: 80px;
+		height: 80px;
+		margin: 30px 0;
+		-webkit-user-select: none;
+		-webkit-user-drag:none;
+		transition: .5s all;
+		transform: translateY(0);
+	}
+	.features .features-box:hover img {
+		transform: translateY(-30px);
+	}
+	.features .features-box p {
+		color: #fff;
+		margin: 30px 0;
+		font-size: 15px;
+		text-indent: 20px;
+		text-align: left;
+		transition: .9s all;
+	}
+	.features .features-box:hover p {
+		transform: translateY(-30px);
+	}
+	.features .btn-report {
+		color: #fff;
+		font-size: 15px;
+		border: 2px solid #fb2a47;
+		background: transparent;
+		opacity: 0;
+		transition: 1.3s all;
+		transform: translateY(70px);
+	}
+	.features .btn-report:hover {
+		background: #fb2a47;
+		border: 2px solid #fb2a47;
+	}
+	.features .features-box:hover .btn-report {
+		transform: translateY(-30px);
+		opacity: 1;
+	}
+
+	.customer-feel {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		background-image: url(../img/markus-spiske-T0qUqLFZsXs-unsplash.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 1;
+	}
+	.customer-feel:after{
+	  content: '';
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	  bottom: 0;
+	  background:rgba(0,0,0,.5);
+	  z-index: -1;
+	}
+	.customer-feel .container {
+		padding-left: 90px;
+		padding-right: 90px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.customer-feel .customer-smile {
+		color: #20ff53;
+	}
+	.customer-feel .customer-normal {
+		color: #f1de00;
+	}
+	.customer-feel .customer-bad {
+		color: #ff192f;
+	}
+	.customer-feel h2 {
+		color: #fff;
+		padding-top: 30px; 
+	}
+	.customer-feel i{
+		font-size: 70px;
+		margin: 20px 0;
+	}
+	.customer-feel h3 {
+		color: #fff;
+		font-family: Courier New;
+		font-weight: 800;
+	}
+	.customer-feel p {
+		color: #fff;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+
+	.footer {
+		width: 100%;
+		height: 100%;
+		border-top: 1px solid lightgrey;
+		text-align: center;
+	}
+	.footer .container {
+		padding-left: 80px;
+		padding-right: 80px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.footer h2 {
+		color:white;
+		text-transform: uppercase;
+		font-size: 30px;
+		margin: 20px 0;
+	}
+	.footer img {
+		width: 100%;
+		height: 100%;
+		margin: 20px 0;
+		text-align: center !important;
+	}
+	.footer p {
+		color: #8996a6;
+		margin: 20px 0;
+	}
+
+	.footer .sosmed {
+		text-align: center;
+	}
+	.footer .sosmed ul li {
+		color: #fff;
+		font-size: 15px;
+		padding: 10px;
+		display: inline-block;
+		border-radius: 5px;
+		transition: .5s all;
+	}
+	.footer .sosmed ul li:hover {
+		color: #fb2a47;
+	}
+	.footer .sosmed a {
+		margin: 0 10px; /* klo di ul li bakal pointer */
+	}
+	
+	.arrival-all {
+		width: 100%;
+		height: 100%;
+	}
+	.arrival-all a{
+		text-decoration: none !important;
+	}
+
+	.arrival-product {
+		width: 100%;
+		max-height: 100%;
+		border-radius:10px;
+		transition: .5s all;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.arrival-product:hover{
+		background-color: #ebecee;
+	}
+	.arrival-product .arrival-product-img img{
+		width: 100%;
+		height: 400px;
+		margin-bottom: 10px;
+		border-radius: 10px;
+		transition: .5s all;
+	}
+	.arrival-product .arrival-product-desc {
+		padding: 10px;
+		border-radius: 10px;
+		text-align: center;
+	}
+	.arrival-product .arrival-product-desc .merk{
+		margin: 3px 0px;
+		font-size: 18px;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+	.arrival-product .arrival-product-desc .type{
+		margin: 3px 0px;
+		font-size: 17px;
+		font-weight: 700;
+		text-transform: capitalize;
+	}
+	.arrival-product .arrival-product-desc .pricenew{
+		margin: 3px 0px;
+		color: #fb2a47;
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.arrival-product .arrival-product-desc .priceold{
+		margin: 3px 5px;
+		color: grey;
+		font-size: 16px;
+		text-decoration: line-through;
+	}
+	.arrival-product .arrival-product-desc .status{
+		color: white;
+		text-align: center;
+		font-size: 25px;
+		background: #fb2a47;
+		border-radius: 10px;
+		width: 100%;
+		height: 80%;
+	}
+	
+	.collect {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+	.collect a {
+		text-decoration: none !important;
+	}
+	.collect .image /* wadah gambar */{
+		width: 100%;
+		height: 250px;
+		margin: 20px 0;
+		border-radius: 10px;
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+	}
+	.collect .image:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: rgba(0,0,0,.5);
+	}
+	.collect .image:hover img {
+		transform: scale(1.1);
+	}
+	.collect .image img {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		transition: 1s all;
+	}
+	.collect .image-hidden {
+		position: absolute; /* collect image relative*/
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		z-index: 1; /* agar didepan bg hitam */
+		transition: 1s all;
+	}
+	.collect .image-hidden h3 {
+		color: white;
+		font-size: 40px;
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-top: 30%;
+	}
+	.collect .image:hover .image-hidden {
+		opacity: 1;
+	}
+
+	.brands {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+	.brands h3 {
+		color:white;
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 15px;
+		background:#14110e;
+		border-radius: 10px;
+	}
+}
