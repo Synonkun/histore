@@ -129,6 +129,10 @@
 	}
 	.jumbotronhi .darkmode input:checked + .background .knob {
 		transform: translateX(67px);
+		width: 29px;
+		height: 29px;
+		border-radius: 50%;
+		background: #f7f7f7;
 		background-image: url(../svg/night.svg);
 		background-repeat: no-repeat;
 		background-size: 80% 80%;
