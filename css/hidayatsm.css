@@ -387,8 +387,8 @@
 		text-align: center;
 	}
 	.footer .container {
-		padding-left: 80px;
-		padding-right: 80px;
+		padding-left: 30px;
+		padding-right: 30px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -426,6 +426,51 @@
 	.footer .sosmed a {
 		margin: 0 10px; /* klo di ul li bakal pointer */
 	}
+	#preloader {
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #0F1215;
+		z-index: 9999999;
+		height: 100%;
+		width: 100%;
+	}
+	#loader {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		padding: 0;
+		background-color: #fb2a47;
+		border-radius: 100%;
+		/*-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;*/
+		animation: sk-scaleout  1s alternate infinite ease-in-out;
+	}
+	/*@-webkit-keyframes sk-scaleout {
+		0% {
+			-webkit-transform: scale(0);
+		}
+		100% {
+			-webkit-transform: scale(1);
+			opacity: 0;
+		}
+	}*/
+	@keyframes sk-scaleout {
+		0% {
+			-webkit-transform: scale(0);
+			transform: scale(0);
+		}
+		100% {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+			opacity: 0;
+		}
+	}
+	
 	
 	.arrival-all {
 		width: 100%;
